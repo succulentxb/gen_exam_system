@@ -4,6 +4,7 @@ from database import db_query, db_exec
 from util import get_now_ts, sha
 
 
+# TODO: test
 def login(username, password):
     password = sha(password)
     try:
@@ -20,6 +21,7 @@ def login(username, password):
         return False
 
 
+# TODO: test
 def register(reg_data):
     full_name = reg_data.get("full_name", None)
     password = reg_data.get("password", None)
